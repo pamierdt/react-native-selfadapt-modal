@@ -33,10 +33,10 @@ export default class LocationModal extends React.PureComponent {
         content: PropTypes.string, //默认选项
         paddingWidth: PropTypes.number, //按钮的padding高度
         privateMenuItem: PropTypes.func, //自定义选项组件
-        modalStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes, //modal样式
-        activeMenuStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes, //选中单项选项容器样式
-        unActiveMenuStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes, //未选中单项选项容器样式
-        flatListStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes, //FlatList样式
+        modalStyle: ViewStyle, //modal样式
+        activeMenuStyle: ViewStyle, //选中单项选项容器样式
+        unActiveMenuStyle: ViewStyle, //未选中单项选项容器样式
+        flatListStyle: ViewStyle, //FlatList样式
         activeMenuTextStyle: Text.propTypes, //选中单项选项文本样式
         unActiveMenuTextStyle: Text.propTypes, //未选中单项选项文本样式
         closeCallBack: PropTypes.func, //关闭弹框回调

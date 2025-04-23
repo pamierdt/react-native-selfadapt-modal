@@ -8,6 +8,7 @@ import {
     View,
     Keyboard,
     ViewPropTypes,
+    ViewStyle
 } from 'react-native';
 
 import LocationModal from './LocationModal';
@@ -18,7 +19,7 @@ class LocationIndex extends React.PureComponent {
         menuList: PropTypes.array.isRequired, //选项列表
         children: PropTypes.node.isRequired, //子元素
         onPress: PropTypes.func, //点击事件
-        containerStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes, //按钮样式
+        containerStyle: ViewStyle, //按钮样式
         ...View.propTypes
     }
 
